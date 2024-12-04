@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+    <link href="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./pfm-photos/pfm-logo.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./pfm-css/budget-planner.css">
+</head>
+<body>
+    <header class="shadow-sm sticky-header mb-4">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="mb-0">Budget Planner</h1>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <button class="btn btn-secondary"><a href="./dashboard.html" class="text-decoration-none" style="color: white;">Home</a></button>
+                    <button class="btn btn-warning me-2">Save Budget</button>
+                    <button class="btn btn-info">Export</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mb-5">
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted mb-1">Total Budget</h6>
+                                <h3 class="mb-0" id="totalBudget">₹3,00,000</h3>
+                            </div>
+                            <div class="fs-1 text-primary">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted mb-1">Allocated</h6>
+                                <h3 class="mb-0" id="allocatedBudget">₹2,25,000</h3>
+                            </div>
+                            <div class="fs-1 text-success">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted mb-1">Remaining</h6>
+                                <h3 class="mb-0" id="remainingBudget">₹75,000</h3>
+                            </div>
+                            <div class="fs-1 text-warning">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Budget Section -->
+        <div class="row">
+            <!-- Left Column - Budget Categories -->
+            <div class="col-lg-8 mb-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">Budget Categories</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Housing Category -->
+                        <div class="category-card card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="mb-0">Housing</h5>
+                                    <span class="badge bg-success">Essential</span>
+                                </div>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Rent/Mortgage</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control budget-input">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Utilities</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control budget-input" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress mt-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Transportation Category -->
+                        <div class="category-card card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="mb-0">Transportation</h5>
+                                    <span class="badge bg-success">Essential</span>
+                                </div>
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <label class="form-label">Car Loan</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control budget-input">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Fuel</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control budget-input" >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Insurance</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control budget-input" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress mt-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Food Category -->
+                        <div class="category-card card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="mb-0">Food</h5>
+                                    <span class="badge bg-success">Essential</span>
+                                </div>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Groceries</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control budget-input">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Dining Out</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control budget-input" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress mt-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Entertainment Category -->
+                        <div class="category-card card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="mb-0">Entertainment</h5>
+                                    <span class="badge bg-secondary">Discretionary</span>
+                                </div>
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <label class="form-label">Streaming Services</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control budget-input">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Hobbies</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control budget-input">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Other</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">₹</span>
+                                            <input type="number" class="form-control budget-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress mt-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Category Button -->
+                <button class="btn btn-warning btn-outline-success w-100" id="addCategoryBtn">
+                    <i class="fas fa-plus me-2"></i>Add New Category
+                </button>
+            </div>
+
+            <!-- Right Column - Summary and Tools -->
+            <div class="col-lg-4">
+                <!-- Budget Summary -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">Budget Summary</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <h6 class="text-muted mb-2">Category Breakdown</h6>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Housing</span>
+                                    <span>₹36,000</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" style="width: 34%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Transportation</span>
+                                    <span>₹16,500</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: 11%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Food</span>
+                                    <span>₹18,000</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" style="width: 12%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <span>Entertainment</span>
+                                    <span>₹6,750</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" style="width: 4.5%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tips -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">Smart Tips</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info mb-3">
+                            <i class="fas fa-lightbulb me-2"></i>
+                            Consider the 50/30/20 rule: 50% Needs,30% Wants,20% Savings
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-sm d-block m-auto" id="startingBudgetWindow">
+        <div class="card p-3 m-auto" id="myBudget">
+            <h4 class="text-end" id="closeWindow">X</h4>
+            <h2 class="text-center">My Budget</h2>
+            <h3 class="my-2">Total Budget : </h3>
+            <input type="number" id="totalBudgetInput">
+            <h3 class="my-2">Allocated Budget : </h3>
+            <input type="number" id="allocatedBudgetInpute">
+            <button id="submitBudget" class="btn btn-warning d-block m-auto mt-2">Enter</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay">
+    </div> -->
+    <script src="https://kit.fontawesome.com/60c3389c89.js" crossorigin="anonymous"></script>
+    <script src="./pfm-js/budgetplanner.js"></script>
+    <script src="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

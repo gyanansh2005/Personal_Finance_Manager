@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Spending Data</title>
+    <link rel="stylesheet" href="./pfm-css/upload_spending_data.css">
+    <link rel="shortcut icon" href="./pfm-photos/pfm-logo.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.typekit.net/med7fre.css">
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar nav1 w-100 sticky-header">
+            <div class="container-fluid align-items-center">
+              <a class="navbar-brand" href="./dashboard.html">
+                <h3 class="d-inline-block brand-name">FinanceUp!</h3>
+              </a>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>Upload Spending Data</h1>
+            <p class="description">Upload your spending data to track and analyze your expenses.</p>
+        </div> 
+    </header>
+
+
+    <main>
+        <div class="container-xl">
+            <div class="upload-section">
+                <h2>File Upload</h2>
+                <p>Upload your spending data file (CSV or Excel). Drag and drop or click to select files.</p>
+                <input type="file" id="file-upload" accept=".csv, .xlsx">
+                <button class="btn">Upload File</button>
+            </div>
+    
+    
+            <div class="form-section">
+                <h2>Manual Data Entry</h2>
+                <form id="data-entry-form">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+    
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="food">Food</option>
+                        <option value="travel">Travel</option>
+                        <option value="utilities">Utilities</option>
+                        <option value="other">Other</option>
+                    </select>
+    
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter amount">
+    
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" name="description" placeholder="Add a short description">
+    
+                    <button type="submit" class="btn">Add Entry</button>
+                </form>
+            </div>
+    
+            <div class="preview-section">
+                <h2>Data Preview</h2>
+                <table class="preview-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="preview-table-body">
+                        <tr>
+                            <td>2024-11-01</td>
+                            <td>Food</td>
+                            <td>50</td>
+                            <td>Lunch</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="help-section">
+                <h2>Help & FAQ</h2>
+                <ul>
+                    <li>Supported file formats: CSV, Excel (.xlsx).</li>
+                    <li>Ensure that each row has a date, category, amount, and description.</li>
+                    <li>Contact support if you encounter issues with file uploads.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

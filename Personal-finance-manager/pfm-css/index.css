@@ -1,0 +1,273 @@
+div#head-con nav.navbar{
+  background-color: #3EB489;
+  font-family: "archivo-black", serif;
+}
+html body {
+  background-color: #e9f1f7;
+  padding: 0;
+  margin:0;
+}
+nav.navbar{
+  width: 100%;
+}
+.navbar a.navbar-brand{
+  font-size: 2.5rem;
+  margin-right: 4rem;
+  font-family: "archivo-black", serif;
+}
+nav.navbar .nav-link {
+  font-family: "archivo-black", sans-serif;
+  font-size: 1.5rem;
+
+}
+nav.navbar .nav-link:hover {
+  color: gold;
+  font-size: 1.75rem;
+
+}
+
+header a {
+  text-decoration: none;
+  color: #131b23;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+}
+
+nav.navbar .but {
+  background-color: #22577A;
+  margin-right: 2rem;
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid;
+  font-size: 110%;
+  color: #e0e0e0;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+nav.navbar .but:hover{
+  scale: 1.02;
+  border: 2px solid gold;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+}
+div.card{
+  background-color: #e9f1f7;
+  border: 0;
+}
+div.card h2,p{
+  font-family: "IBM Plex Sans";
+}
+div.card p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+div.card h1 a{
+  text-decoration: none;
+  font-family: "archivo-black";
+  color: black;
+  font-size: 3.5rem;
+}
+div.card h1 a:hover{
+  text-decoration: none;
+  color: gold;
+  cursor: pointer;
+}
+div.card h2 span{
+  color: red;
+}
+.preview-icons-heading{
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: -1rem;
+  font-family: "IBM Plex Sans",sans-serif;
+}
+.preview-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 5%;
+  background-color: rgba(255, 217, 0, 0.503);
+  padding: 1.5% 0px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+@media screen and (max-width : 1200px) {
+  .preview-icons{
+    flex-flow: row wrap;
+  }
+  .preview-icon{
+    width: 50%;
+  }
+}
+@keyframes scrolling-up-icons {
+  100%{
+    transform: translate(0) scale(1);
+  }
+}
+.preview-icon{
+  border-radius: 10px;
+  padding: 1%;
+  transform: translateY(100vh) scale(0.2);
+  animation: scrolling-up-icons 2s forwards;
+  animation-range: 0 80vh;
+  animation-timeline: view();
+  opacity: 0.9;
+}
+.preview-icon:hover{
+  scale: 1.2;
+  opacity: 1;
+}
+.preview-icon h3{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: -10%;
+}
+.preview-icon h5{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+/* moving on the why section  */
+.why{
+  background-color: #9ad1bd53;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.reasons{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% auto;
+  padding-bottom: 1rem;
+
+}
+.why-head h1{
+  text-align: center;
+  font-size: 3rem;
+  font-family: "archivo-black", sans-serif;
+  padding-top: 1rem;
+}
+.why-head h3{
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: -2%;
+}
+.why p{
+  font-family: "IBM Plex Sans",serif;
+  font-weight: 400;
+}
+@keyframes scrolling-cards{
+  100%{
+    transform: translate(0) scale(1);
+    opacity: 1;
+  }
+}    
+.reason{
+  width: 50%;
+  display: flex;
+  gap: 2%;
+  flex-direction: row;
+  animation: scrolling-cards 2s forwards;
+  animation-timeline: view();
+  animation-range: 0 40vh;
+}
+
+.reason:nth-of-type(odd){
+  transform:translate(-50vw) scale(0.1);
+  opacity: 0.2;
+}
+.reason:nth-of-type(even){
+  transform:translate(50vw) scale(0.1);
+  opacity: 0.2;
+}
+.reason-image{
+  width: 25%;
+}
+.reason-explain{
+  width:60%;
+  font-family: "IBM Plex Sans";
+}
+.reason-image i{
+  font-size: 8rem;
+}
+.reason-image i:hover{
+  font-size: 8.1rem;
+}
+
+footer{
+  background-color: #3EB489;
+}
+.footer-container{
+  display: flex;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -4%;
+  gap: 8%;
+  justify-content: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 5% 0;
+}
+.footer-container a{
+  text-decoration: none;
+  color: black;
+}
+.footer-container a:hover{
+  font-size: larger;
+  color: gold;
+  font-weight: bolder;  
+}
+.footer-section{
+  width: 33%;
+}
+.email-updates input{
+  border: 0;
+}
+.footer-section h4{
+  font-size: 1.75rem;
+}
+.footer-section h5{
+  font-size: 1.25rem;
+}
+.footer-section h5:hover{
+  font-size: 1,3rem;
+  color: gold;
+  font-weight: bolder;
+}
+.footer-section li{
+  font-size: 1.5rem;
+}
+footer button {
+  background-color: #22577A;
+  margin-right: 2rem;
+  width: 30%;
+  border-radius: 50px;
+  border: 2px solid;
+  font-size: 80%;
+  color: #e0e0e0;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+footer button:hover{
+  scale: 1.02;
+  border: 2px solid gold;
+  cursor: pointer;
+}

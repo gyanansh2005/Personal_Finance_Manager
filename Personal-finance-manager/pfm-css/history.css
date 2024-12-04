@@ -1,0 +1,15 @@
+.transaction-card {
+    border-left: 5px solid red;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+    .transaction-card:hover {
+        transform: translateY(-3px);
+    }
+    body {
+      background-color: rgba(173, 216, 230, 0.081);
+    }
+    .nav1 {
+      background-color: #3eb489;
+      font-family: archivo-black,serif;
+    }

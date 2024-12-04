@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+.container1{
+width: 70%;
+}
+nav {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #7ed4ad;   
+}
+.navbar-brand{
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: archivo-black;
+}
+h2 {
+    color:#3eb489;
+    font-weight: bold;
+}
+
+form {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+}
+
+button {
+    border: none;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #7ed4ad;
+    border: none;
+}
+
+.btn:hover {
+    background: #3eb489;
+}
+
+button:hover {
+    background: #3eb489;
+}
+
+.faq-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #7ed4ad;
+    color: #ffffff;
+}
+
+.faq-question {
+    font-weight: bold;
+}

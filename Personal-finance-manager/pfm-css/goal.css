@@ -1,0 +1,74 @@
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: #3eb489;
+    font-family: "archivo-black";
+}
+main{
+    margin-top: 8.5rem;
+}
+.row-sm{
+    margin: auto;
+}
+div.container-xl{
+    border: 1px solid;
+    border-radius: 10px;
+    background-image: linear-gradient(to top,#3eb489,white);
+}
+div.container-xl:hover{
+    box-shadow: 10px 5px 40px rgba(218, 132, 12, 0.3);
+}
+.duration{
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #3eb489;
+    margin: auto;
+    transform: translateY(100vh);
+    animation: appear 1s forwards ease;
+    box-shadow: 10px 5px 40px rgba(218, 132, 12, 0.3);
+}
+.category{
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #3eb489;
+    transform: translateY(100vh);
+    animation: appear 1s forwards ease;
+    box-shadow: 10px 5px 40px rgba(218, 132, 12, 0.3);
+}
+.typings{
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #3eb489;
+    transform: translateY(100vh);
+    animation: appear 1s forwards ease;
+    box-shadow: 10px 5px 40px rgba(218, 132, 12, 0.3);
+}
+.buttons{
+    transform: translateY(100vh);
+    animation: appear 1s forwards ease;
+    
+}
+.goal{
+    font-family: archivo-black;
+    transform: translateX(-1100px);
+    animation: appear 1s forwards ease;
+}
+h5{
+    font-family: caecilia;
+}
+@keyframes appear{
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes shake{
+    10%{
+        transform: rotateX(5deg);
+    }
+    15%{
+        transform: rotate(5deg);
+    }
+}

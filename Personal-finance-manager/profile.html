@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="./pfm-css/profile.css">
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/med7fre.css">
+    <link rel="shortcut icon" href="./pfm-photos/pfm-logo.ico.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="row-sm w-100">
+            <nav class="navbar position-fixed top-0 w-100">
+                <div class="container-fluid align-items-center">
+                  <a class="navbar-brand" href="./dashboard.html">
+                    <h3 class="d-inline-block brand-name">FinanceUp!</h3>
+                  </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-xl main-wrap">
+            <div class="row-sm">
+                <div>
+                    <a href="./dashboard.html" class="text-decoration-none"><i class="fa-solid fa-person-walking-arrow-loop-left" style="color: #FFD43B;"></i> Go back</a>
+                </div>
+            </div>
+            <div class="container-sm">
+                <div class="row-sm mb-3">
+                    <h3 class="display-5 py-2 text-center">My Profile <i class="fa-solid fa-user" style="color: #63E6BE;"></i></h3>
+                </div>
+                <div class="row-sm w-50 mb-3">
+                    <div class="card" style="width: 10rem;">
+                        <img src="./pfm-photos/user img.png" class="card-img-top" alt="User Image">
+                      </div>
+                      <div>
+                          <label  class="mt-3">Upload Profile Photo : </label>
+                          <input type="file" name="" id="">
+                      </div>
+                </div>
+                <div class="row-sm mb-3 w-50 ">
+                    <form action="./dashboard.html">
+                        <div class="input-group mb-2 profile-entry">
+                            <span class="input-group-text">First and last name</span>
+                            <input type="text" aria-label="First name" class="form-control">
+                            <input type="text" aria-label="Last name" class="form-control">
+                        </div>
+                        <div class="input-group mb-2 flex-nowrap profile-entry">
+                            <span class="input-group-text" id="addon-wrapping">Age</span>
+                            <input type="text" class="form-control" placeholder="Enter your age here" aria-label="Age" aria-describedby="addon-wrapping">
+                            <span class="input-group-text" id="addon-wrapping">years</span>
+                        </div>
+                        <h6 class="text-center">Gender : </h6> 
+                        <div class="row-sm d-flex justify-content-evenly mb-3 profile-entry">
+                            <input type="radio" class="btn-check" name="gender" id="week-outlined" autocomplete="off" checked>
+                            <label class="btn btn-success btn-outline-warning" for="week-outlined">Male</label>
+                            
+                            <input type="radio" class="btn-check" name="gender" id="month-outlined" autocomplete="off">
+                            <label class="btn btn-success btn-outline-warning" for="month-outlined">Female</label>
+                            
+                            <input type="radio" class="btn-check" name="gender" id="year-outlined" autocomplete="off">
+                            <label class="btn btn-success btn-outline-warning" for="year-outlined">Prefer Not to Say</label>
+                        </div>
+                        <div class="input-group mb-3 profile-entry">
+                            <input type="email" class="form-control" placeholder="Enter email here" aria-label="email" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">example@gmail.com</span>
+                        </div>
+                        <div class="row mb-2 profile-entry">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Country" aria-label="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="State" aria-label="Last name">
+                            </div>
+                          </div>
+                        <div>
+                        <div class="row mb-3 profile-entry">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="City" aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" placeholder="Pincode" aria-label="Last name">
+                            </div>
+                            </div>
+                        <div class="row-sm profile-entry">
+                            <button class="btn btn-secondary btn-outline-warning" type="submit">Save Changes</button>
+                            <button class="btn btn-danger btn-outline-warning" type="reset">Reset Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid mt-5">
+            <h4 class="text-center">FinanceUp &copy; 2024</h4>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/60c3389c89.js" crossorigin="anonymous"></script>
+    <script src="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

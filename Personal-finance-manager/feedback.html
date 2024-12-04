@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/med7fre.css">
+    <link rel="shortcut icon" href="./pfm-photos/pfm-logo.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./pfm-css/feedback.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="./dashboard.html">Finance Up!</a>
+        </div>
+    </nav>
+
+    
+    <div class="container mt-5 container1">
+        <h2 class="text-center mb-4">We Value Your Feedback</h2>
+        <p class="text-center text-muted mb-4">Please share your thoughts to help us improve our services.</p>
+
+        <form action="#" method="POST" class="border p-4 rounded">
+        
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            </div>
+        
+        
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+        
+        
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+        
+        
+            <div class="mb-3">
+                <label for="type" class="form-label">Feedback Type</label>
+                <select class="form-select" id="type" name="type" required>
+                    <option selected disabled>Select a type</option>
+                    <option>Suggestion</option>
+                    <option>Complaint</option>
+                    <option>Compliment</option>
+                    <option>Bug Report</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        
+        
+            <div class="mb-3">
+                <label for="rating" class="form-label">Rate Your Experience (1 = Poor, 5 = Excellent)</label>
+                <select class="form-select" id="rating" name="rating">
+                    <option selected disabled>Select a rating</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        
+        
+            <div class="mb-3">
+                <label for="contact-time" class="form-label">Preferred Contact Time</label>
+                <input type="time" class="form-control" id="contact-time" name="contact-time">
+            </div>
+        
+        
+            <div class="mb-3">
+                <label for="feedback" class="form-label">Your Feedback / Reason for your rating</label>
+                <textarea class="form-control" id="feedback" name="feedback" rows="4"
+                    placeholder="Write your feedback here..." required></textarea>
+            </div>
+        
+        
+            <div class="mb-3">
+                <label for="attachment" class="form-label">Upload Screenshot/Attachment (Optional)</label>
+                <input type="file" class="form-control" id="attachment" name="attachment">
+            </div>
+        
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                <label for="terms" class="form-check-label">I agree to the <a href="#">terms and conditions</a>.</label>
+            </div>
+        
+
+            <button type="submit" class="btn btn-primary w-100">Submit Feedback</button>
+        </form>
+    </div>
+
+
+    <div class="container faq-section mt-5 container1">
+        <h3 class="text-center mb-4">Frequently Asked Questions (FAQs)</h3>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        How is my feedback used?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Your feedback helps us improve our services and provide a better experience for all users.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Can I remain anonymous?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, providing your name and email is optional. You can submit feedback anonymously.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        How do I contact support?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can reach us via the <a href="contact.html">Contact Us</a> page for further assistance.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2024 Finance Up!. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

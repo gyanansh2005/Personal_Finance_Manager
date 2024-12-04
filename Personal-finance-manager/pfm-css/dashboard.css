@@ -1,0 +1,218 @@
+html body{
+    padding: 0;
+    margin: 0;
+    background-color: #e9f1f7;
+}
+.navbar{
+    background-color: #3EB489;
+    height: 4.5rem;
+    position: fixed;
+    top: 0;
+}
+.navbar>a{
+    font-size: 3rem;
+}
+#userName{
+    color: orangered;
+}
+main{
+    margin-top: 2rem;
+    z-index: 5;
+    margin-bottom: 5%;
+}
+a.brand-name{
+    font-size: 2rem;
+}
+.navbar-brand{
+    font-family: "archivo-black", serif;
+}
+.dash{
+    width: 78%;
+    padding: 0;
+}
+.dash>.row-sm{
+    padding: 0;
+}
+.dash a{
+    text-decoration: none;
+}
+h4,h5{
+    font-family: caecilia;
+}
+
+.freq-used-wrap{
+    border-radius:10px;
+    box-shadow: 0px 9px 30px rgba(218, 132, 12, 0.1);
+}
+.card img,.card-body{
+    background-color: #4169e1bd;
+}
+.card a , .card-title{
+    color: black;
+    font-family: caecilia, serif;
+    font-weight: 800;
+}
+.card a:hover{
+    color: orangered;
+}
+.card p {
+    color: #000000;
+}
+div.card{
+    overflow: hidden;
+    
+}
+.card:hover{
+    scale: 1.05;
+}
+h5.text-dark{
+    font-weight: 700;
+    font-family: caecilia;
+}
+.carousel-item p{
+    color: whitesmoke;
+    font-family: caecilia;
+    background-color: #0000008d;
+}
+footer{
+    background-color: #3EB489;
+}
+.use-ables{
+    transform: translateY(100vh);
+    animation: backtoposition 1s forwards;
+    border-radius: 10px;
+    box-shadow: 0px 9px 30px rgba(218, 132, 12, 0.1);
+}
+.slide{
+    box-shadow: 10px 5px 40px rgba(218, 132, 12, 0.3);
+}
+.footer-container{
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -4%;
+    gap: 8%;
+    justify-content: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    padding: 5% 0;
+}
+.footer-container a{
+    text-decoration: none;
+    color: black;
+}
+.footer-container a:hover{
+    font-size: larger;
+    color: gold;
+    font-weight: bolder;  
+}
+.footer-section{
+    width: 33%;
+}
+.email-updates input{
+    border: 0;
+}
+.footer-section h4{
+    font-size: 1.75rem;
+}
+.footer-section h5{
+    font-size: 1.25rem;
+}
+.footer-section h5:hover{
+    font-size: 1,3rem;
+    color: gold;
+    font-weight: bolder;
+}
+.footer-section li{
+    font-size: 1.5rem;
+}
+div.freq-cards:nth-of-type(1),div.freq-cards:nth-of-type(2){
+    transform: translateX(-150vh);
+}
+div.freq-cards:nth-of-type(3),div.freq-cards:nth-of-type(4){
+    transform: translateX(150vh);
+}
+@keyframes backtoposition {
+    100%{
+        transform: translate(0);
+        scale: 1;
+        opacity: 1;
+    }
+}
+div.freq-cards{
+    scale: 0.2;
+    opacity: 0.4;
+    animation: backtoposition 1s forwards;
+}
+div.container-md{
+    position: absolute;
+    top: 17.5%;
+    left: 7%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: #4169e1;
+    height: 70vh;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 20;
+}
+
+#sendVault h4>a{
+    color: black;
+}
+#sendVault div.vaultBody{
+    color: gold;
+    z-index: 12;
+}
+div.vaultBody img{
+    height: 400px;
+    z-index: 12;
+    display: block;
+    margin-left: -150px;
+}
+div.vaultBody div.card:hover{
+    scale: 1;
+}
+#tip p{
+    border-left: 4px solid gold;
+    padding-left: 3px;
+    background-color: rgb(250, 238, 167);
+}
+.hidden{
+    display: none;
+}
+.invalidWithdrawal{
+    background-color: orangered;
+    color: white;
+    animation: grow 1s forwards;
+}
+@keyframes grow {
+    50%{
+        transform: scale(1.02);
+    }
+}
+div.enterName{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    z-index: 20;
+}
+div.enterName h2{
+    color: white;
+}
+div.enterName div.card {
+    background-color: #517af5;
+
+}
+div.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #999999aa;
+    height: 235vh;
+    width: 100vw;
+}
+#close{
+    cursor: pointer;
+}

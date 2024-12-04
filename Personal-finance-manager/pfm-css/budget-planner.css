@@ -1,0 +1,46 @@
+body {
+    background-color: #f8f9fa;
+}
+.category-card {
+    transition: transform 0.2s;
+    border-left: 4px solid #3eb489;
+}
+.category-card:hover {
+    transform: translateY(-5px);
+}
+.progress {
+    height: 10px;
+}
+.budget-input {
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s;
+}
+.budget-input:focus {
+    border-color: #3eb489;
+}
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #3eb489;
+}
+div.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #999999aa;
+    height: 200vh;
+    width: 100vw;
+}
+.hidden{
+    display: none;
+}
+#startingBudgetWindow{
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    z-index: 20;
+}
+#closeWindow{
+    cursor: pointer;
+}

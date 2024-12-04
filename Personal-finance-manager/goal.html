@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set a Goal</title>
+    <link rel="stylesheet" href="./pfm-css/goal.css">
+    <link rel="stylesheet" href="https://use.typekit.net/med7fre.css">
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./pfm-photos/pfm-logo.ico.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="row-sm">
+            <nav class="navbar position-fixed top-0 w-100">
+                <div class="container-fluid align-items-center">
+                  <a class="navbar-brand" href="./dashboard.html">
+                    <h3 class="d-inline-block brand-name">FinanceUp!</h3>
+                  </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid w-100">
+        <main>
+            <div class="container-xl">
+                <div class="row-sm mb-3">
+                    <h3 class="text-center display-5 goal">Saving Goal 💰</h3>
+                </div>
+            <form action="./dashboard.html">
+                <div class="row-sm duration mb-3 pt-3 w-50">
+                    <div class="row-sm mb-3">
+                        <h5 class="text-center">Choose Your Saving Goal Time length</h5>
+                    </div>
+                    <div class="row-sm d-flex justify-content-evenly mb-3">
+                        <input type="radio" class="btn-check" name="options-outlined" id="week-outlined" autocomplete="off" checked>
+                        <label class="btn btn-secondary btn-outline-warning" for="week-outlined">Week</label>
+                        
+                        <input type="radio" class="btn-check" name="options-outlined" id="month-outlined" autocomplete="off">
+                        <label class="btn btn-secondary btn-outline-warning" for="month-outlined">Month</label>
+                        
+                        <input type="radio" class="btn-check" name="options-outlined" id="year-outlined" autocomplete="off">
+                        <label class="btn btn-secondary btn-outline-warning" for="year-outlined">Year</label>
+                    </div>
+                </div>
+                <div class="row-sm w-50 category p-2 mb-4">
+                    <select class="form-select form-select-sm bg-success-subtle" aria-label="Small select example">
+                        <option selected>Choose for what you are saving ⬇️</option>
+                        <option value="1">Study-Fee</option>
+                        <option value="2">Personal Accessory</option>
+                        <option value="3">Gift for someone</option>
+                        <option value="4">Vacation</option>
+                        <option value="5">Others</option>
+                      </select>                  
+                </div>
+                <div class="row-sm w-50 py-3 typings px-4 mb-3">
+                    <div class="input-group flex-nowrap mb-3">
+                        <span class="input-group-text bg-success" id="addon-wrapping"><i class="fa-solid fa-bullseye" style="color: #FFD43B;"></i></span>
+                        <input type="text" class="form-control bg-success-subtle" placeholder="Goal Name" aria-label="Username" aria-describedby="addon-wrapping" required>
+                    </div>
+                    <div class="input-group flex-nowrap mb-3">
+                        <span class="input-group-text bg-success" id="addon-wrapping"><i class="fa-solid fa-sack-dollar" style="color: #FFD43B;"></i></span>
+                        <input type="number" class="form-control bg-success-subtle" placeholder="Total Saving amount" aria-label="Amount (to the nearest dollar)" required>
+                        <span class="input-group-text bg-success">.00</span>
+                    </div>
+                    <div class="input-group flex-nowrap ">
+                        <span class="input-group-text bg-success" id="addon-wrapping"><i class="fa-solid fa-circle-dollar-to-slot" style="color: #FFD43B;"></i></span>
+                        <input type="number" class="form-control bg-success-subtle" placeholder="Staring Saving amount" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text bg-success">.00</span>
+                    </div>
+                </div>
+                <div class="row-sm d-flex justify-content-center buttons mb-5">
+                    <div>   
+                        <button class="btn btn-warning btn-outline-success save-goal" type="submit" id="saveGoal">Save Goal</button>
+                        <button class="btn btn-warning btn-outline-danger" type="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </main>
+        <footer>
+            <div class="row-sm py-4 mt-2">
+                <h4 class="text-center">FinanceUp! ©️ 2024</h4>
+            </div>
+        </footer>
+    </div>
+    <script src="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./pfm-js/goal.js"></script>
+    <script src="https://kit.fontawesome.com/60c3389c89.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+.navbar{
+    background-color: #3eb489;
+    font-family: archivo-black;
+}
+
+nav.navbar{
+    z-index: 1;
+}
+a.text-decoration-none{
+    color: black;
+}
+main{
+    margin-top: 5rem;
+}
+.main-wrap{
+    transform: translateY(50vh);
+    animation: back 1s forwards;
+}
+h3.text-center{
+    font-family: archivo-black,serif;
+}
+.row-sm{
+    margin: auto;
+}
+.card{
+    margin: auto;
+}
+.card:hover{
+    scale: 1.1;
+}
+.card:active{
+    animation: comeforth 2s forwards;
+}
+.main-wrap{
+    border: 1px solid;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #3eb489, white);
+}
+.main-wrap:hover{
+    box-shadow: 10px 5px 40px rgba(218, 132, 12, 0.3);
+}
+span{
+    font-family: caecilia;
+}
+@keyframes comeforth{
+    25%{
+        transform: rotate(58deg);
+    }
+    50%{
+        transform:rotateY(180deg);
+        scale: 1.5;
+    }
+    75%{
+        transform: rotateZ(90deg);
+        perspective: 200px;
+    }
+    100%{
+        scale: 2.5;
+        z-index: 1;
+    }
+}
+@keyframes back{
+    100%{
+        transform: translate(0);
+    }
+}
